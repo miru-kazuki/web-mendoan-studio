@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mendoan Studio</title>
+  <!-- Font Jetbrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="Assets/MendoanLogo_v1-01.png" alt="Logo">
+    </div>
+    <nav class="nav-links">
+      <a href="#home">HOME</a>
+      <a href="#features">FEATURES</a>
+      <a href="#about">ABOUT US</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="container">
+
+    <!-- HERO / TOP SECTION (2 Kolom) -->
+    <section class="hero-section">
+      <!-- Kolom Kiri: Deskripsi & Tombol -->
+      <div class="hero-left">
+        <div class="description-box">
+          <p>An endless demonic cooking simulator where you must juggle preparing food while surviving screen-blocking customer chats and sudden corporate paperwork.</p>
+        </div>
+
+        <a href="#play" class="btn-play">play game</a>
+
+        <div class="theme-box">
+          <p>Theme Interpretation - <br> So Absurd, It's Cool</p>
+        </div>
+
+        <div class="label-box">
+          <span>contoh game play</span>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Logo Game & Karakter -->
+      <div class="hero-right">
+        <img src="game-logo.png" alt="Damnation Diner Truck" class="game-logo">
+        <img src="character.png" alt="Character" class="character-img">
+      </div>
+    </section>
+
+    <!-- GAMEPLAY GALLERY SECTION -->
+    <section class="gameplay-section">
+      <div class="gameplay-item">
+        <img src="gameplay1.png" alt="Gameplay 1" class="gameplay-thumb">
+        <span class="arrow-icon">⬅</span>
+      </div>
+      <div class="gameplay-item">
+        <img src="gameplay2.png" alt="Gameplay 2" class="gameplay-thumb">
+        <span class="arrow-icon">⬅</span>
+      </div>
+      <div class="gameplay-item">
+        <img src="gameplay3.png" alt="Gameplay 3" class="gameplay-thumb">
+        <span class="arrow-icon">⬅</span>
+      </div>
+    </section>
+
+    <!-- IFRAME GAME SECTION -->
+    <section class="iframe-section">
+      <div class="iframe-container">
+        <!-- Nanti 'iframe' game itchio / unity webgl lo taro di sini -->
+        <p>iframe game</p>
+        <iframe 
+          src="DDT v1.0 webgl/index.html" 
+          title="Damnation Diner Truck Game"
+          width="960" 
+          height="600" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
