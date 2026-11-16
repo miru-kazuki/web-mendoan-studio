@@ -1,170 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mendoan</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mendoan Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
+  <!-- NAVBAR -->
   <header class="site-header">
-    <a class="site-brand" href="#portfolio" aria-label="Mendoan Games home">
-      <img class="site-logo" src="Image/logo.png" alt="Mendoan Games">
+    <a class="site-brand" href="index.html" aria-label="Mendoan Games home">
+      <div class="img-slot img-slot--logo" style="width: 46px; height: 46px;">
+        <img class="site-logo" src="Image/logo.png" alt="Logo" width="46" height="46" data-placeholder="LOGO">
+      </div>
     </a>
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="#about">About</a>
+      <a href="#about" class="nav-highlight is-current">About</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="games.html">Games</a>
       <a href="#support">Support</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <div class="top-thing" aria-hidden="true">
-    <div class= "top-thing-logo" data-aos="fade-down">
-      <img src="Image/MendoanLogo.png" alt="Mendoan Games">
+  <!-- HERO BANNER -->
+  <section class="hero-section">
+    <div class="background-banner" aria-hidden="true">
+      <div class="img-slot img-slot--banner">
+        <img src="Image/background.png" alt="" data-placeholder="Placeholder: Hero Background Banner">
+      </div>
     </div>
-    <div class= "background-banner">
-      <img src="Image/background.png" alt="">
-    </div>
-    
-  </div>
 
-  <section class="WebIntro" id="about" data-aos="fade-down" aria-labelledby="about-title">
+    <div class="hero-content" data-aos="fade-down">
+      <div class="img-slot img-slot--hero-logo">
+        <img src="Image/MendoanLogo.png" alt="Mendoan Games" data-placeholder="Placeholder: Mendoan Games Hero Logo">
+      </div>
+      <p class="hero-tagline">We make games for story-rich enthusiasts.</p>
+      <p class="hero-subtext">
+        Mendoan Games was built by two ordinary teens at heart, and we aim to make the most memorable title you'll ever play.
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ABOUT US -->
+  <section class="WebIntro" id="about" data-aos="fade-up" aria-labelledby="about-title">
     <h1 id="about-title">About Us</h1>
     <div class="WebIntro-copy">
-      <p>We make game experiences with captivating stories and design.</p>
-      <p>Mendoan Games is a small indie game studio based in Indonesia, founded and led by Muhammad Al-Farabi Taufik, a 3D Artist with over 3 years of experience in the animation industry. As of now, we are still in the early stages of developing the studio, developing our skills and building our portfolio.</p>
-      <p>We are passionate about creating immersive and engaging game experiences with unique visuals and compelling ideas. All that came from our shared vision and never ending love for video games.</p>
+      <p class="lead-italic">We make game experiences with captivating stories and design.</p>
+      <p>
+        Mendoan Games is a small indie game studio based in Indonesia, founded and led by <strong>Muhammad Al-Farabi Taufik</strong> and <strong>Nabil Marzuq Amirulzufar</strong>. As of now, we are still in the early stages of developing the studio, developing our skills and building our portfolio.
+      </p>
+      <p>
+        We are passionate about creating immersive and engaging game experiences with unique visuals and compelling ideas. All that came from our shared vision and never ending love for video games.
+      </p>
     </div>
+
     <div class="team-members" aria-label="Mendoan Games team">
       <article class="team-member">
-        <img src="Image/xuffy.jpg" alt="Ilustrasi profil Muhammad Al-Farabi Taufik" width="200" height="200">
+        <div class="img-slot img-slot--avatar">
+          <img src="Image/xuffy.jpg" alt="Muhammad Al-Farabi Taufik" data-placeholder="Placeholder: Farabi">
+        </div>
         <div class="team-member-copy">
           <h2>Muhammad Al-Farabi Taufik</h2>
           <p>Game Artist</p>
         </div>
       </article>
+
       <article class="team-member">
-        <img src="Image/miru.png" alt="Ilustrasi profil Nabil Marzuq Amirulzufar" width="200" height="200">
+        <div class="img-slot img-slot--avatar">
+          <img src="Image/miru.png" alt="Nabil Marzuq Amirulzufar" data-placeholder="Placeholder: Marzuq">
+        </div>
         <div class="team-member-copy">
           <h2>Nabil Marzuq Amirulzufar</h2>
           <p>Game Programmer</p>
         </div>
       </article>
-      <a class="contact-button" id="contact" href="https://www.instagram.com/xuffy0904/">Contact on Instagram</a>
     </div>
   </section>
 
-  <div class="VideoCollections" id="portfolio" data-aos="flip-left">
-    <h1>Our Portfolio</h1>
+  <hr class="section-divider">
+
+  <!-- OUR PORTFOLIO (VIDEO CAROUSEL) -->
+  <section class="VideoCollections" id="portfolio" data-aos="fade-up" aria-labelledby="portfolio-title">
+    <h1 id="portfolio-title">Our Portfolio</h1>
     <div class="video-carousel" aria-label="Portfolio videos">
       <div class="video-carousel-viewport">
-        <video width="320" height="320" controls class="is-active">
-        <source src="Videos/Renseq 0001.mp4" type="video/mp4">
-        Your browser flippin sucks
+        <video controls class="is-active" poster="">
+          <source src="Videos/Renseq 0001.mp4" type="video/mp4">
         </video>
-
-        <video width="320" height="320">
-        <source src="Videos/ANM 2025Q1 TightShirt Previz v01.mp4" type="video/mp4">
-        Your browser flippin sucks
+        <video>
+          <source src="Videos/ANM 2025Q1 TightShirt Previz v01.mp4" type="video/mp4">
         </video>
-
-        <video width="320" height="320">
-        <source src="Videos/Abi-Dialogue Practice-2.mp4" type="video/mp4">
-        Your browser flippin sucks
+        <video>
+          <source src="Videos/Abi-Dialogue Practice-2.mp4" type="video/mp4">
         </video>
-
-        <video width="320" height="320">
-        <source src="Videos/Makarovanim.mp4" type="video/mp4">
-        Your browser flippin sucks
+        <video>
+          <source src="Videos/Makarovanim.mp4" type="video/mp4">
         </video>
-
-        <video width="320" height="320">
-        <source src="Videos/Wip3 X02 Kill10000-0530(1).mp4" type="video/mp4">
-        Your browser flippin sucks
-
-        <video width="320" height="320">
-        <source src="Videos/robloxbrain.mp4" type="video/mp4">
-        Your browser flippin sucks
+        <video>
+          <source src="Videos/Wip3 X02 Kill10000-0530(1).mp4" type="video/mp4">
         </video>
-
+        <video>
+          <source src="Videos/robloxbrain.mp4" type="video/mp4">
+        </video>
       </div>
 
       <div class="video-carousel-controls">
-        <button type="button" class="video-previous" aria-label="Previous video">Previous</button>
-        <span class="video-position" aria-live="polite">1 of 3</span>
-        <button type="button" class="video-next" aria-label="Next video">Next</button>
+        <button type="button" class="video-previous" aria-label="Previous video">◀</button>
+        <span class="video-position" aria-live="polite">1 / 6</span>
+        <button type="button" class="video-next" aria-label="Next video">▶</button>
       </div>
-    </div>
-  </div>
- 
-  <section class="projects-section" id="projects" aria-labelledby="projects-title">
-    <h2 id="projects-title">Projects</h2>
-    <div class="project-list">
-      <article class="project-row" data-aos="fade-up">
-        <div class="project-media project-media--placeholders" aria-label="Platformer-B project image placeholders">
-          <div class="project-image-placeholder">Project image</div>
-          <div class="project-image-placeholder">Character image</div>
-        </div>
-        <div class="project-description">
-          <h3>PROJECT “PLATFORMER-B” (Upcoming)</h3>
-          <p>Trapped in an endless subway station, a college student burdened by lifelong health struggles meets a delinquent companion.</p>
-          <p>As an unfitting pair, they must overcome their strained partnership and grow into a profound bond in hopes of finding a way out.</p>
-        </div>
-      </article>
-
-      <article class="project-row project-row--reverse" data-aos="fade-up">
-        <div class="project-description">
-          <h3>DAMNATION DINER TRUCK (Playable)</h3>
-          <p>An endless demonic cooking simulator where you must juggle preparing food while surviving screen-blocking customer chats and sudden corporate paperwork.</p>
-        </div>
-        <section class="iframe-section">
-          <div class="iframe-container" class="project-media">
-          <iframe
-          id="iFrame" 
-          src="DDT v1.0 webgl/index.html" 
-          title="Damnation Diner Truck Game"
-          width="640" 
-          height="400" 
-          frameborder="0" 
-          allowfullscreen>
-        </iframe>
-          </div>
-        </section>
-      </article>
     </div>
   </section>
 
-  <audio controls>
-  <source src="Audio/Arvopart.mp3" type="audio/mpeg">
-  Your browser flippin sucks
-  </audio>
+  <!-- PROJECTS (HORIZONTAL SCROLLABLE + BACKGROUND ART) -->
+  <section class="projects-section" id="projects" aria-labelledby="projects-title">
+    <div class="projects-header">
+      <h2 id="projects-title">Projects</h2>
+      <div class="projects-nav-btns">
+        <button type="button" class="proj-scroll-btn" id="projPrev" aria-label="Scroll left">←</button>
+        <button type="button" class="proj-scroll-btn" id="projNext" aria-label="Scroll right">→</button>
+      </div>
+    </div>
 
+    <div class="projects-horizontal-track" id="projectsTrack">
+      <!-- Project Card 1 -->
+      <article class="project-card">
+        <div class="project-card-bg" aria-hidden="true">
+          <img src="Image/damnation-bg-art.png" alt="">
+        </div>
+        <div class="project-card-top">
+          <h3>DAMNATION DINER TRUCK</h3>
+          <span class="status-badge status-badge--playable">Playable</span>
+        </div>
+        <a href="games.html?game=damnation" class="project-card-frame">
+          <div class="img-slot img-slot--card">
+            <img src="Image/project damnation.png" alt="Damnation Diner Truck" data-placeholder="Placeholder: Damnation Diner Truck">
+          </div>
+        </a>
+      </article>
+
+      <!-- Project Card 2 -->
+      <article class="project-card">
+        <div class="project-card-bg" aria-hidden="true">
+          <img src="Image/platformb-bg-art.png" alt="">
+        </div>
+        <div class="project-card-top">
+          <h3>PROJECT “PLATFORM-B”</h3>
+          <span class="status-badge status-badge--upcoming">Upcoming</span>
+        </div>
+        <a href="games.html?game=platform-b" class="project-card-frame project-card-frame--split">
+          <div class="img-slot img-slot--card">
+            <img src="Image/peron gameplay.png" alt="Platform-B Gameplay" data-placeholder="Placeholder: Gameplay">
+          </div>
+          <div class="img-slot img-slot--card-side">
+            <img src="Image/peron char.png" alt="Platform-B Character" data-placeholder="Placeholder: Char">
+          </div>
+        </a>
+      </article>
+
+      <!-- Project Card 3 -->
+      <article class="project-card">
+        <div class="project-card-bg" aria-hidden="true">
+          <img src="Image/modulo-bg-art.png" alt="">
+        </div>
+        <div class="project-card-top">
+          <h3>MODULO: THE SOCIAL ALGORITHM</h3>
+          <span class="status-badge status-badge--playable">Playable</span>
+        </div>
+        <a href="games.html?game=modulo" class="project-card-frame">
+          <div class="img-slot img-slot--card">
+            <img src="Image/modulothumb.png" alt="Modulo WebGL" data-placeholder="Placeholder: Modulo: The Social Algorithm">
+          </div>
+        </a>
+      </article>
+
+      <!-- Project Card 4 -->
+      <article class="project-card">
+        <div class="project-card-bg" aria-hidden="true">
+          <img src="Image/archive-bg-art.png" alt="">
+        </div>
+        <div class="project-card-top">
+          <h3>PROJECT “ARCHIVE-07”</h3>
+          <span class="status-badge status-badge--upcoming">In Concept</span>
+        </div>
+        <a href="games.html?game=damnation" class="project-card-frame">
+          <div class="img-slot img-slot--card">
+            <img src="Image/missing-concept.png" alt="Concept Art" data-placeholder="Placeholder: Concept Art #4">
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <div class="projects-cta">
+      <a href="games.html" class="accent-btn">Explore projects &amp; play →</a>
+    </div>
+  </section>
+
+  <!-- AUDIO SHOWCASE -->
+  <section class="audio-showcase" aria-label="Original Soundtrack Preview">
+    <p class="audio-label">Studio Soundtrack Sample</p>
+    <audio controls>
+      <source src="Audio/Arvopart.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- SUPPORT US -->
   <section class="support-section" id="support" aria-labelledby="support-title">
     <h2 id="support-title">Support Us!</h2>
     <div class="support-options" aria-label="Ways to support Mendoan Games">
-      <img src="Image/Trakteer-image.png" alt="Trakteer" width="474" height="89">
-      <img src="Image/Kofi-image.png" alt="Ko-fi" width="435" height="112">
+      <a href="#" class="support-link">
+        <div class="img-slot img-slot--support">
+          <img src="Image/Trakteer-image.png" alt="Trakteer" data-placeholder="Placeholder: Trakteer">
+        </div>
+      </a>
+      <a href="#" class="support-link">
+        <div class="img-slot img-slot--support">
+          <img src="Image/Kofi-image.png" alt="Ko-fi" data-placeholder="Placeholder: Ko-fi">
+        </div>
+      </a>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <p>Follow Us</p>
-    <p>Contact Us</p>
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-group">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="https://www.instagram.com/xuffy0904/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="X / Twitter">X</a>
+        <a href="mailto:mendoangames@example.com" aria-label="Email">✉</a>
+      </div>
+    </div>
+
+    <div class="footer-group">
+      <h3>Contact Us</h3>
+      <p class="footer-contact">+62 851-5652-9009</p>
+      <p class="footer-address">
+        Jl. Srengseng Sawah No.17, RT.8/RW.3, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630
+      </p>
+    </div>
+
+    <p class="copyright">© 2026 PT. Mendoan Games. All rights reserved.</p>
   </footer>
 
-  <!-- Aos js script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
-
-   <!-- Aos js script -->
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
   <script>
-      AOS.init();
+    AOS.init({ once: true, duration: 600 });
   </script>
-  </body>
-
+</body>
 </html>

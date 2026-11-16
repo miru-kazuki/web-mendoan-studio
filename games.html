@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games — Mendoan Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="game-page-body">
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="Mendoan Games home">
+      <div class="img-slot img-slot--logo">
+        <img class="site-logo" src="Image/logo.png" alt="Logo" data-placeholder="LOGO">
+      </div>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html#about">About</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="games.html" class="nav-highlight is-current">Games</a>
+      <a href="index.html#support">Support</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN SHORT GAME STAGE -->
+  <main class="game-showcase-main">
+    <a href="index.html" class="back-link">← Back to home</a>
+
+    <!-- Title & Status Row -->
+    <div class="game-header-row">
+      <div>
+        <h1 id="gameTitle">DAMNATION DINER TRUCK</h1>
+        <p class="game-subtitle" id="gameSubtitle">Game showcase</p>
+      </div>
+      <span class="status-badge status-badge--playable" id="gameBadge">Playable</span>
+    </div>
+
+    <!-- Game / Video Stage -->
+    <section class="game-stage-wrapper" aria-label="Game viewport">
+      <!-- Mode 1: Playable WebGL Iframe (untuk Modulo atau build WebGL) -->
+      <div class="game-iframe-box" id="gameIframeBox" hidden>
+        <iframe
+          id="gameIframe"
+          src=""
+          title="Playable WebGL Game"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Mode 2: Showcase Video / Placeholder Cover -->
+      <div class="game-media-box" id="gameMediaBox">
+        <div class="img-slot img-slot--stage">
+          <img id="gameCoverImg" src="Image/project damnation.png" alt="Game Cover" data-placeholder="Placeholder: Game Cover / WebGL Build Stage (16:9)">
+        </div>
+        <button type="button" class="play-overlay-btn" id="launchGameBtn">
+          <span class="play-circle">▶</span>
+          <span id="launchBtnLabel">Play showcase</span>
+        </button>
+        <div class="stage-bottom-bar">
+          <span>▶ &nbsp; 0:00</span>
+          <span id="stageBarTag">Game showcase</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About the Game + Character Art -->
+    <section class="game-about-grid">
+      <div class="game-about-text">
+        <h2>About the game</h2>
+        <p id="gameDesc">
+          An endless demonic cooking simulator where you must juggle preparing food while surviving screen-blocking customer chats and sudden corporate paperwork.
+        </p>
+      </div>
+      <div class="game-char-art">
+        <div class="img-slot img-slot--char">
+          <img id="gameCharImg" src="Image/damnation-chars.png" alt="Character Cast" data-placeholder="Placeholder: Character Cast Art">
+        </div>
+      </div>
+    </section>
+
+    <!-- Next in Portfolio Card -->
+    <section class="next-portfolio-card" aria-label="Next in portfolio">
+      <div class="next-card-left">
+        <div class="img-slot img-slot--next-thumb">
+          <img id="nextGameThumb" src="Image/peron gameplay.png" alt="Next Project" data-placeholder="Placeholder: Next">
+        </div>
+        <div class="next-card-info">
+          <span class="next-eyebrow">NEXT IN PORTFOLIO</span>
+          <h3 id="nextGameTitle">PROJECT “PLATFORM-B”</h3>
+          <p id="nextGameMeta">Upcoming · A story-rich adventure</p>
+        </div>
+      </div>
+      <button type="button" class="view-next-btn" id="nextGameBtn">View project →</button>
+    </section>
+  </main>
+
+  <!-- COMPACT FOOTER -->
+  <footer class="site-footer site-footer--compact">
+    <p class="copyright">© 2026 PT. Mendoan Games. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
